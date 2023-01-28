@@ -1,17 +1,16 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from "react";
 
-import classes from './ui.module.css'
+import classes from "./ui.module.css";
 
-const Button = ({ isModal, handleDo, children}) => {
-
+const Button = ({ isModal, handleDo, children }) => {
   return (
     <button
-      onClick={handleDo} 
+      onClick={handleDo}
       className={isModal ? classes.modalButton : classes.button}
     >
       {children}
     </button>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;
